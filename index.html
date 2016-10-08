@@ -1,0 +1,24 @@
+<html>
+<body>
+
+<button class="button" onclick="myQuote()">Next Quote</button>
+<p id="empty"></p>
+  
+<script type="text/javascript">
+
+function myQuote() {
+var quote = new Array();
+quote[0] = '"Be yourself; everyone else is already taken."<br />Oscar Wilde';
+quote[1] = '"A room without books is like a body without a soul."<br />Marcus Tullius Cicero';
+quote[2] = '"You only live once, but if you do it right, once is enough."<br />Mae West';
+quote[3] = '"Be the change that you wish to see in the world."<br />Mahatma Gandhi';
+quote[4] = '"Without music, life would be a mistake."<br />Friedrich Nietzsche';
+
+var length = quote.length;
+
+document.getElementById("empty").innerHTML = quote[Math.floor(Math.random()*(quote.length-1))];
+};
+
+</script>
+</body>
+</html>  
